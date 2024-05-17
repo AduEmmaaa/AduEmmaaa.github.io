@@ -18,7 +18,7 @@ const Addblog = () => {
       category,
       imgUrl: url,
     };
-    console.log(initials);
+    console.log("url :", url);
     if (!title || !textarea)
       return toast.error("Title and Description required");
 
