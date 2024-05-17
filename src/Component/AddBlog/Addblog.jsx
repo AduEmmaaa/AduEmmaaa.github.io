@@ -47,7 +47,7 @@ const Addblog = () => {
     formData.append("upload_preset", "vpj2spgo");
 
     try {
-      fetch("http://api.cloudinary.com/v1_1/dzzmqi5hn/image/upload", {
+      fetch("https://api.cloudinary.com/v1_1/dzzmqi5hn/image/upload", {
         method: "POST",
         body: formData,
       })
