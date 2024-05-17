@@ -53,7 +53,9 @@ const Addblog = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          seturl(data.url);
+          seturl(data.secure_url);
+          console.log(data);
+
           toast.success("image Upload done");
         });
     } catch (error) {
